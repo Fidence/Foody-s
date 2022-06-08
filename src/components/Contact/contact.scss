@@ -1,0 +1,142 @@
+@import "../Router/utilities";
+.contact__header {
+  background-image: url(../Assets//heading-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  span {
+    font-size: 1.1rem;
+    color: $groco_gray;
+  }
+}
+.contactwrap {
+  width: 80%;
+  margin: 0 auto;
+  @media (max-width: 900px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .conicons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 400px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .conicon {
+      margin: 1.5rem 0;
+      padding: 1rem;
+      border: $groco_border;
+      text-align: center;
+      .color {
+        background-color: $groco-main;
+        width: 4rem;
+        font-size: 2rem;
+        height: 4rem;
+        // line-height: 6rem;
+        border-radius: 50%;
+        padding: 1.2rem;
+        color: $groco-white;
+      }
+      h4 {
+        color: $groco-black;
+        font-size: 1.3rem;
+        padding: 1rem 0;
+      }
+      p {
+        color: $groco-gray;
+        font-size: 1rem;
+        line-height: 2;
+      }
+    }
+  }
+  .coninfos {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    @media (max-width: 900px) {
+      display: block;
+    }
+    @media (max-width: 400px) {
+      display: block;
+    }
+    form {
+      flex: 1;
+      width: 100%;
+      padding: 1rem;
+      border: $groco_border;
+      h2 {
+        padding-bottom: 1rem;
+        font-weight: 900;
+      }
+
+      .inputs {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        input {
+          padding: 0.6rem 0.5rem;
+          @media (max-width: 900px) {
+          }
+          width: 100%;
+          border: $groco_border;
+          &::placeholder {
+            font-weight: 600;
+            font-size: 0.9rem;
+
+            @media (max-width: 900px) {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+      textarea {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border: $groco_border;
+        &::placeholder {
+          font-weight: 600;
+          font-size: 0.9;
+        }
+      }
+      .btn {
+        display: block;
+        margin: 0 auto;
+        padding: 0.7rem 4rem;
+        border: none;
+        background-color: $groco-main;
+        color: $groco-white;
+        font-size: 1rem;
+        cursor: pointer;
+        &:hover {
+          background-color: $groco-black;
+        }
+      }
+    }
+    .fram {
+      flex: 1;
+      width: 100%;
+      height: 25rem;
+      @media (max-width: 900px) {
+        margin-top: 2rem;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    }
+  }
+}

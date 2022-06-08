@@ -1,0 +1,123 @@
+@import "../Router/utilities";
+
+.review {
+  &_header {
+    background-image: url(../Assets//heading-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      span {
+        color: $groco-gray;
+      }
+    }
+  }
+  .wrapping {
+    width: 80%;
+    margin: 0 auto;
+    @media (max-width: 820px) {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .reviewcomp {
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem 0;
+        @media (max-width: 820px) {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 461px) {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        .fastwapper {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          @media (max-width: 461px) {
+            margin-bottom: 1rem;
+          }
+          @media (max-width: 393px) {
+            gap: 2rem;
+          }
+
+          .img33 {
+            width: 90px;
+            img {
+              width: 100%;
+            }
+          }
+          .deliver {
+            h3 {
+              font-size: 1.3rem;
+              color: $groco-black;
+              margin-bottom: 0.5rem;
+            }
+            span {
+              font-size: 0.9rem;
+              color: $groco_gray;
+            }
+          }
+        }
+      }
+    }
+    .reviewtest {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: 1rem 0 2.5rem 0;
+      @media (max-width: 820px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: 461px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .testifier {
+        padding: 1rem;
+        border: 1.4px solid #ddd;
+        .test {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+          margin-bottom: 1rem;
+          img {
+            height: 7rem;
+            width: 7rem;
+            border-radius: 50%;
+          }
+          h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.4rem;
+          }
+          span {
+            font-size: 1rem;
+            color: $groco-main;
+          }
+        }
+        p {
+          line-height: 2;
+        }
+      }
+    }
+  }
+}
