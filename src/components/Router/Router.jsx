@@ -12,7 +12,7 @@ import Footer from "../Footer/Footer";
 
 const Roouter = () => {
   return (
-    <div>
+    <div className="roter">
       <Router>
         <Navbar />
         <Routes>

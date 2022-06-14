@@ -18,9 +18,7 @@ const Shop = () => {
             <h2>
               Our <span className="color">Categories</span>
             </h2>
-            <p>
-              Home &gt;&gt;<span>Blogs</span>
-            </p>
+            <span>View All &gt;&gt;</span>
           </div>
 
           <div className="carts">

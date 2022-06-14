@@ -7,6 +7,23 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 70vh;
+  display: flex;
+  .right {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 3rem;
+    background-color: red;
+    color: $groco-main;
+    z-index: 1;
+  }
+  .left {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 3rem;
+    color: $groco-main;
+  }
   &__wrapper {
     display: flex;
     align-items: center;
