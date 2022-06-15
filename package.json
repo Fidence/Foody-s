@@ -11,7 +11,11 @@
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-slick": "^0.29.0",
+    "react-slick-carousel": "^0.14.9",
+    "react-slider": "^2.0.1",
     "sass": "^1.49.7",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
