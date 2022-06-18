@@ -16,14 +16,14 @@ export default class HompComp extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1,
+      slidesToScroll: 3,
       responsive: [
         {
           breakpoint: 1300,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1,
-
+            slidesToScroll: 3,
+            infinite: true,
             dots: true,
           },
         },
@@ -41,7 +41,7 @@ export default class HompComp extends Component {
           breakpoint: 820,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
             infinite: true,
           },
         },
