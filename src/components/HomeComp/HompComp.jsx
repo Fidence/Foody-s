@@ -7,7 +7,7 @@ import Homm2 from "../Assets/home-img-3.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { render } from "@testing-library/react";
+
 
 export default class HompComp extends Component {
   render() {
@@ -16,13 +16,13 @@ export default class HompComp extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 3,
+      slidesToScroll: 1,
       responsive: [
         {
           breakpoint: 1300,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
             infinite: true,
             dots: true,
           },
@@ -81,7 +81,7 @@ export default class HompComp extends Component {
             <div className="slider_wrapper">
               <div className="wrapper">
                 <span>Fresh And Organic</span>
-                <h3>Upto 50% Off</h3>
+                <h1>Upto 50% Off</h1>
                 <button>Shop Now</button>
               </div>
               <div className="slider__image">
@@ -93,7 +93,7 @@ export default class HompComp extends Component {
             <div className="slider_wrapper">
               <div className="wrapper">
                 <span>Fresh And Organic</span>
-                <h3>Upto 50% Off</h3>
+                <h1>Upto 50% Off</h1>
                 <button>Shop Now</button>
               </div>
               <div className="slider__image1">
@@ -105,7 +105,7 @@ export default class HompComp extends Component {
             <div className="slider_wrapper">
               <div className="wrapper">
                 <span>Fresh And Organic</span>
-                <h3>Upto 50% Off</h3>
+                <h1>Upto 50% Off</h1>
                 <button>Shop Now</button>
               </div>
               <div className="slider__image2">
